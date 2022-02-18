@@ -210,7 +210,23 @@ class _UserProfileState extends State<UserProfile> {
         ),
         SizedBox(
           height: 40,
-        )
+        ),
+        RaisedButton(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+          ),
+          onPressed: () async {
+            FirebaseAuth.instance.signOut();
+          },
+          color: Constants.primaryColor,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 60.0, vertical: 15),
+            child: Text(
+              'Log out',
+              style: TextStyle(color: Colors.white),
+            ),
+          ),
+        ),
       ]),
     ));
   }
