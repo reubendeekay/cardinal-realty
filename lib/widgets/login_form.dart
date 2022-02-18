@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:get/route_manager.dart';
 import 'package:provider/provider.dart';
 import 'package:real_estate_ui/screens/home.dart';
 import 'package:real_estate_ui/provider/auth_provider.dart';
 import 'package:real_estate_ui/utils/helper.dart';
+import 'package:real_estate_ui/widgets/bottom_bar.dart';
 import 'package:real_estate_ui/widgets/input_widget.dart';
 import 'package:real_estate_ui/widgets/primary_button.dart';
 
@@ -52,7 +54,7 @@ class _LoginFormState extends State<LoginForm> {
               onPressed: () async {
                 await Provider.of<AuthProvider>(context, listen: false)
                     .signIn(_email, _password);
-                Helper.nextScreen(context, Home());
+                Get.off(() => BottomBar());
               },
             ),
             SizedBox(height: 10.0),
