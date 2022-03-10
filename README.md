@@ -1,7 +1,5 @@
 # 🔥 🔥 Real Estate Flutter UI Kit 🔥 🔥 💫 ⭐️ ⭐️ 👨‍💻 
 
-Complete flutter projects are available on my <a href="https://codecanyon.net/user/chris2code/portfolio">Codecanyon.net Page</a>
-
 PRs are welcomed. Issues are welcomed too.
 
 Send me UI suggestions for any uplabs project on <a href="mailto:info@flutterpanda.com">info@flutterpanda.com</a>
